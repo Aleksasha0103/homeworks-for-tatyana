@@ -1,0 +1,250 @@
+@font-face {
+  src: url(/assets/fonts/IntroDemo-BlackInlineCAPS.ttf);
+  font-family: "Intro";
+  font-style: normal;
+}
+
+@font-face {
+  src: url(/assets/fonts/RobotoSlab-Regular.ttf);
+  font-family: "RobotoSlab";
+  font-style: normal;
+}
+
+header,
+footer {
+  max-width: 1290px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5.6rem auto 0rem;
+  text-align: end;
+  justify-content: space-between;
+}
+
+footer {
+  flex-direction: column;
+  margin: 0 auto 5rem;
+  text-align: start;
+  justify-content: left;
+}
+
+.logo {
+  margin-left: -3.125rem;
+}
+
+.button,
+.button__basket,
+.button__buy {
+  background-color: #5222d0;
+  border: 0px;
+  border-radius: 100px;
+  font-family: "Intro", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  justify-items: center;
+  padding: 14px 14px 11px 16px;
+  margin: 0px 0px 55px 0px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+
+.button__basket {
+  padding: 14px 33px 11px 16px;
+  font-size: 0.8rem;
+}
+
+.button__basket:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 13.9px;
+  bottom: 0px;
+  left: 86.4px;
+  background: transparent;
+  background: url("/assets/img/icon_basket.svg") no-repeat center center;
+  opacity: 1;
+  z-index: 2;
+}
+
+.button__buy {
+  font-size: 2.2rem;
+  padding: 28px 90px 21px 33px;
+  margin-top: 1.87rem;
+}
+
+.button__buy:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 31.84px;
+  bottom: 0px;
+  left: 196px;
+  background: transparent;
+  background: url("/assets/img/icon_card.svg") no-repeat center center;
+  opacity: 1;
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 33.25rem;
+}
+
+.list,
+.list__main,
+.list__inside {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
+  justify-content: space-between;
+  font-family: "RobotoSlab", sans-serif;
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+
+.list__main {
+  color: #5222d0;
+}
+
+.list__inside {
+  color: #000000;
+}
+
+.list__main__link {
+  text-decoration: none;
+  color: #5222d0;
+}
+
+.list__inside__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.background {
+  max-width: 100%;
+  background-image: url(/assets/img/img-main-page.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.main-main-page {
+  max-width: 1290px;
+  height: 45.6rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-main-page__section {
+  width: 30.7rem;
+  height: 45.6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.main-inside-page,
+.main-inside-page__section {
+  width: 1290px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0rem;
+  margin: 0 auto 3.1rem;
+}
+
+.main-inside-page__section {
+  margin: 0rem 0rem 3.1rem 0rem;
+}
+
+h1,
+.h2-title,
+.h2-title_row2,
+.h2-title_subscribe-form {
+  font-family: "Intro", sans-serif;
+  font-style: normal;
+  font-size: 3.75rem;
+  line-height: 120%;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.h2-title {
+  font-size: 1.43rem;
+  margin-bottom: 0.6rem;
+}
+
+.h2-title_row2 {
+  font-size: 1.43rem;
+  margin-top: 1.56rem;
+}
+
+.h2-title_subscribe-form {
+  font-size: 1.43rem;
+  color: #ffffff;
+}
+
+p,
+#userEmail {
+  font-family: "RobotoSlab", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 160%;
+  color: #000000;
+}
+
+input {
+  height: 50px;
+  width: 323px;
+  border: 0px;
+  color: #000000;
+  margin: 6px 22px 23px 0px;
+  justify-self: left;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+  margin-bottom: 1.56rem;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+
+.cards__item,
+.cards__subscribe-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: flex-start;
+  width: 22.8rem;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.cards__item__img {
+  width: 22.8rem;
+  margin: 0rem 0rem 1.4rem 0rem;
+  padding: 0rem;
+  object-fit: cover;
+}
+
+.cards__subscribe-form {
+  background-color: #ec615b;
+  padding: 1.56rem 0rem 0.37rem 1.25rem;
+  box-sizing: content-box;
+}
